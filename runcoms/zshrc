@@ -23,7 +23,7 @@ export GITX_HOME=/Applications/GitX.app/Contents/Resources
 export HEROKU_HOME=/usr/local/heroku
 export RBENV_HOME=$HOME/.rbenv
 export NPM_HOME=/usr/local/share/npm
-export PGAPP_HOME=/Applications/Postgres.app/Contents/Versions/9.3
+export PGAPP_HOME=/Applications/Postgres.app/Contents/Versions/9.4
 export PATH=$NPM_HOME/bin:$HEROKU_HOME/bin:$GITX_HOME:$RBENV_HOME/bin:$PGAPP_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 ###########################
