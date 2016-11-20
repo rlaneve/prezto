@@ -6,10 +6,8 @@
 #   Zeh Rizzatti <zehrizzatti@gmail.com>
 #
 
-# Load NVM into the shell session.
-if [[ -s "$HOME/.nvm/nvm.sh" ]]; then
-  source "$HOME/.nvm/nvm.sh"
-fi
+export NVM_DIR="/Users/ryan/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Return if requirements are not found.
 if (( ! $+commands[node] )); then
@@ -29,4 +27,3 @@ if (( $+commands[npm] )); then
 
   unset cache_file
 fi
-

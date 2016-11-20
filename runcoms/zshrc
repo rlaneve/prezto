@@ -22,9 +22,8 @@ export LSCOLORS="Exfxcxdxbxegedabagacad"
 export GITX_HOME=/Applications/GitX.app/Contents/Resources
 export HEROKU_HOME=/usr/local/heroku
 export RBENV_HOME=$HOME/.rbenv
-export NPM_HOME=/usr/local/share/npm
 export PGAPP_HOME=/Applications/Postgres.app/Contents/Versions/9.4
-export PATH=$NPM_HOME/bin:$HEROKU_HOME/bin:$GITX_HOME:$RBENV_HOME/bin:$PGAPP_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HEROKU_HOME/bin:$GITX_HOME:$RBENV_HOME/bin:$PGAPP_HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 ###########################
 ### ALIASES & FUNCTIONS ###
@@ -36,3 +35,5 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 alias gca="git commit -a"
 alias gs="git status -sb"
 alias gco="git checkout"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
